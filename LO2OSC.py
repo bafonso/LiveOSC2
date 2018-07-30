@@ -21,7 +21,7 @@ class LO2OSC(object):
 
     _in_error = False
 
-    def __init__(self, remotehost = '127.0.0.1', remoteport=9000, localhost='127.0.0.1', localport=9001):
+    def __init__(self, remotehost = '127.0.0.1', remoteport=9001, localhost='127.0.0.1', localport=9000):
 
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self._socket.setblocking(0)
